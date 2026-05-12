@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIPEX AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+    <div class="background-layer">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" id="top">
+        <nav class="navbar glass-card">
+            <div class="brand">
+                <a href="index.html" class="brand-title">VIPEX AI</a>
+                <span class="brand-subtitle">Powered by VIPUL SOFTWARES</span>
+            </div>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="nav-links" class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero section-fade reveal">
+            <p class="badge-pill">Next-Gen AI Experience</p>
+            <h1 class="hero-title">Think Faster with <span>VIPEX AI</span></h1>
+            <p class="hero-subtitle">
+                A premium futuristic AI assistant platform for conversations, productivity, coding, research, and
+                everything in between.
+            </p>
+            <div class="hero-cta">
+                <a class="btn-primary ripple-btn" href="#chatbot">Try AI</a>
+                <a class="btn-secondary ripple-btn" href="features.html">Learn More</a>
+            </div>
+        </section>
+
+        <section class="chat-section section-fade reveal" id="chatbot">
+            <div class="chat-wrapper glass-card">
+                <div class="chat-header">
+                    <h2>Ask VIPEX AI</h2>
+                    <p>Smart, instant and fluid AI chat built for startup-level experience.</p>
+                </div>
+
+                <div id="chat-box" class="chat-box" aria-live="polite"></div>
+
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+                    <button id="send-button" type="button" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block reveal">
+            <div class="section-head">
+                <h2>AI Preview</h2>
+                <p>Visualize the power of your futuristic assistant in action.</p>
+            </div>
+            <div class="preview-grid">
+                <article class="glass-card preview-card floating-card">
+                    <h3>Smart Suggestions</h3>
+                    <p>Get context-aware responses and actionable ideas in seconds.</p>
+                </article>
+                <article class="glass-card preview-card floating-card delay-1">
+                    <h3>Task Intelligence</h3>
+                    <p>Automate writing, coding, learning, and productivity with AI guidance.</p>
+                </article>
+                <article class="glass-card preview-card floating-card delay-2">
+                    <h3>Adaptive Conversation</h3>
+                    <p>Natural interactions designed for seamless and premium real-time chat.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block reveal">
+            <div class="section-head">
+                <h2>Why Choose VIPEX AI</h2>
+            </div>
+            <div class="feature-grid six-col">
+                <article class="glass-card feature-card"><h3>Fast</h3></article>
+                <article class="glass-card feature-card"><h3>Secure</h3></article>
+                <article class="glass-card feature-card"><h3>Smart</h3></article>
+                <article class="glass-card feature-card"><h3>Modern</h3></article>
+                <article class="glass-card feature-card"><h3>Free to Use</h3></article>
+                <article class="glass-card feature-card"><h3>Cross Platform</h3></article>
+            </div>
+        </section>
+
+        <section class="section-block reveal">
+            <div class="section-head">
+                <h2>Tech Stack</h2>
+            </div>
+            <div class="badge-wrap">
+                <span class="tech-badge glass-card">Node.js</span>
+                <span class="tech-badge glass-card">Express.js</span>
+                <span class="tech-badge glass-card">JavaScript</span>
+                <span class="tech-badge glass-card">HTML/CSS</span>
+                <span class="tech-badge glass-card">Groq API</span>
+                <span class="tech-badge glass-card">AI Models</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-socials">
+            <a href="#" aria-label="Social Link">X</a>
+            <a href="#" aria-label="Social Link">in</a>
+            <a href="#" aria-label="Social Link">ig</a>
+        </div>
+        <p>© 2026 VIPUL SOFTWARES</p>
+        <p>Made with ❤️ by Vipul Meshram</p>
+    </footer>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
